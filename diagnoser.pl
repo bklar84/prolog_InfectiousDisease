@@ -1,29 +1,3 @@
-/*
-	Title: Infectious Disease Diagnoser
-	Author: Brian Klarman
-	Class: CS355
-	Professor: Morris
-	
-	This program allows a user to enter their current symptoms and ending their list with 'done'.
-	The user then enters the locations they have visited in the past six months, ending with 'done'.
-	
-	The database is then queried for a list of tests which are based on diseases that have the user's
-	symptoms. The user will respond to the tests with either 'positive' or 'negative'. Once test
-	results have been entered, the user will be presented with a list of possible diseases they have
-	contracted and the treatments associated with them.
-	
-	The disease facts are stored in:
-		symptoms.pl
-		tests.pl
-		locales.pl
-		treatments.pl
-	
-	General use:
-		1) View the splash screen by typing 'run.'
-		2) If you need additional help, type 'imlost'
-		3) Begin the diagnostic tool by typing 'main.'
-*/
-
 :- include('symptoms.pl').
 :- include('tests.pl').
 :- include('locales.pl').
@@ -101,8 +75,6 @@ imlost :-
 	write('************************************************'),nl,
 	write('\nIn the main prompt, enter a symptom followed by a period.'),nl,
 	write('Keep entering your symptoms and type \'done.\' to finish.'),nl,
-	write('\nPerform the same steps for the places you have visited.'),nl,
-	write('\nAnd finally, enter either \'positive.\' or \'negative.\' for each test result.\n'),nl,
 	write('\n*******************************'),nl,
 	write('*******  Quick queries  *******'),nl,
 	write('*******************************'),nl,
